@@ -10,10 +10,12 @@
     $paragraph = "Ciao sono maurizio e ho 24 anni ";
     $userval = $_GET;
     var_dump($userval);
+    // sostituisco la parola dell'scelta dall'utente
     $newParagraph = str_replace($userval , "***" , $paragraph);
     ?>
 </head>
 <body>
+    <!-- stampo la frase base -->
     <p>
         <?php 
         echo $paragraph;
@@ -25,6 +27,7 @@
         ?>
     </span>
 
+    <!-- stampo la frase modificata dall'user -->
     <p>
         <?php 
         echo $newParagraph;
