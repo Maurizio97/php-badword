@@ -8,7 +8,7 @@
     <?php
 
     $paragraph = "Ciao sono maurizio e ho 24 anni ";
-    $userval = $_GET;
+    $userval = $_GET['word'];
     var_dump($userval);
     // sostituisco la parola dell'scelta dall'utente
     $newParagraph = str_replace($userval , "***" , $paragraph);
